@@ -165,6 +165,33 @@
                                                     <img src="{{asset('/assets/images/template/seven.png')}}" class=" w-full h-full object-cover object-top" alt="">
                                                 </div>
                                             </div>
+                                            <div class="w-full aspect-[2/3] rounded-md overflow-hidden relative">
+                                                <input type="radio" name="template" id="eight" value="eight" class="hidden" 
+                                                       @checked(isset($product->template) && $product->template === 'eight') 
+                                                       @change="selected = 'eight'">
+                                                <label for="eight" class="absolute z-10 w-full h-full top-0 left-0 duration-300" :class="selected === 'eight' ? 'bg-black/50' : 'hover:bg-black/20'"></label>
+                                                <div class=" bg-[#1679AB] flex items-start w-full h-full">
+                                                    <img src="{{asset('/assets/images/template/eight.png')}}" class=" w-full h-full object-cover object-top" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="w-full aspect-[2/3] rounded-md overflow-hidden relative">
+                                                <input type="radio" name="template" id="nine" value="nine" class="hidden" 
+                                                       @checked(isset($product->template) && $product->template === 'nine') 
+                                                       @change="selected = 'nine'">
+                                                <label for="nine" class="absolute z-10 w-full h-full top-0 left-0 duration-300" :class="selected === 'nine' ? 'bg-black/50' : 'hover:bg-black/20'"></label>
+                                                <div class=" bg-[#1679AB] flex items-start w-full h-full">
+                                                    <img src="{{asset('/assets/images/template/nine.png')}}" class=" w-full h-full object-cover object-top" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="w-full aspect-[2/3] rounded-md overflow-hidden relative">
+                                                <input type="radio" name="template" id="ten" value="ten" class="hidden" 
+                                                       @checked(isset($product->template) && $product->template === 'ten') 
+                                                       @change="selected = 'ten'">
+                                                <label for="ten" class="absolute z-10 w-full h-full top-0 left-0 duration-300" :class="selected === 'ten' ? 'bg-black/50' : 'hover:bg-black/20'"></label>
+                                                <div class=" bg-[#1679AB] flex items-start w-full h-full">
+                                                    <img src="{{asset('/assets/images/template/ten.png')}}" class=" w-full h-full object-cover object-top" alt="">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     
