@@ -6,7 +6,7 @@
                 <div class=" absolute top-0 left-0 w-full h-full bg-black/40"></div>
             </div>
             <div class=" flex flex-col justify-center items-center py-4 md:py-8 px-4 gap-4 relative text-white">
-                <p class=" text-2xl font-black">{{$data->name}}</p>
+                <p class=" text-2xl font-black text-center">{{$data->name}}</p>
                 <div class=" w-28 aspect-square bg-white rounded-full overflow-hidden">
                     <img src="{{ asset('storage/images/product/' . $data->image) }}" class=" w-full h-full object-cover " alt="">
                 </div>

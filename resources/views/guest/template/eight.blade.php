@@ -5,7 +5,7 @@
                 <div class=" w-28 aspect-square bg-white rounded-full overflow-hidden">
                     <img src="{{ asset('storage/images/product/' . $data->image) }}" class=" w-full h-full object-cover " alt="">
                 </div>
-                <p class=" text-2xl font-black">{{$data->name}}</p>
+                <p class=" text-2xl font-black text-center">{{$data->name}}</p>
                 <p class=" text-center">{{$data->subtitle}}</p>
             </div>
             <div class=" w-full max-w-[640px] mx-auto px-4 md:px-0 relative">

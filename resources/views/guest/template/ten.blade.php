@@ -10,7 +10,7 @@
                     <img src="{{ asset('storage/images/product/' . $data->image) }}" class=" w-full h-full object-cover " alt="">
                 </div>
                 <div class=" w-full text-center text-white space-y-2">
-                    <p class=" text-2xl font-black">{{$data->name}}</p>
+                    <p class=" text-2xl font-black text-center">{{$data->name}}</p>
                     <p class=" text-center">{{$data->subtitle}}</p>
                 </div>
             </div>
