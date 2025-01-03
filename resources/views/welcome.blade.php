@@ -149,8 +149,8 @@
                                     <p class=" text-lg font-semibold line-clamp-1">{{$item->name}}</p>
                                 </a>
                                 <div class="">
-                                    <p class="">Mulai dari Rp. {{ str_replace(',', '.', number_format($item->price))}}</p>
-                                    <p class=" text-neutral-600 text-sm line-clamp-2">{{$item->description}}</p>
+                                    {{-- <p class="">Mulai dari Rp. {{ str_replace(',', '.', number_format($item->price))}}</p> --}}
+                                    <p class=" text-neutral-600 text-sm line-clamp-2">{{$item->subtitle}}</p>
                                 </div>
                                 <div class=" pt-2 grid grid-cols-2 gap-2">
                                     <a href="{{route('detail', ['slug'=>$item->slug])}}">
