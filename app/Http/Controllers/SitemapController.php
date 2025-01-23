@@ -21,7 +21,8 @@ class SitemapController extends Controller
             $sitemap->add(Url::create("/{$slug}")->setLastModificationDate($model->updated_at));
         }
 
-        $sitemap->writeToFile(public_path('sitemap.xml'));
+        $sitemap->writeToFile(storage_path('app/public/sitemap.xml'));
+
     }
 }
 
