@@ -22,7 +22,6 @@ class SitemapController extends Controller
         }
 
         $sitemap->writeToFile(public_path('sitemap.xml'));
-        // return response()->download(public_path('sitemap.xml'));
     }
 }
 
