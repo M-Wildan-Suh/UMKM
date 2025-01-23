@@ -7,6 +7,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductGalleryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SitemapController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +24,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'home'])->name('home');
 
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);
+
+Route::get('/optimize-clear', function(){
+    Artisan::call('optimize:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('view:clear');
+    echo 'Cache cleared successfully!';
+});
 
 Route::get('/admin/dashboard', function () {
     return view('dashboard');
