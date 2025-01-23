@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
 
-Route::get('/sitemap.xml', [SitemapController::class, 'index']);
+Route::get('/generate-sitemap', [SitemapController::class, 'index']);
 
 Route::get('/optimize-clear', function(){
     Artisan::call('optimize:clear');
